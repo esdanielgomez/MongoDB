@@ -1,14 +1,16 @@
 var MongoClient = require('mongodb').MongoClient,
     assert = require('assert');
 
-MongoClient.connect('mongodb://localhost:27017/dbPersonal', { useNewUrlParser: true }, function(err, client) {
+const url = "mongodb://cosmosnsoql:f5WX0ctn2UCvQAVToPrBI5BrlHXXmdTm9Ed5lE7tAXJKDCfVdGrAla4phmnqDtlbrN5BBJ8JGyckRmCwcDSgig==@cosmosnsoql.documents.azure.com:10255/?ssl=true";
+
+MongoClient.connect(url, { useNewUrlParser: true }, function(err, client) {
     
     if(err) { 
         return console.log(" ---> Error al conectar a MongoDB"); 
     }
     
     console.log(" ---> Conectado a MongoDB.");
-    var db = client.db('dbPersonal');
+    var db = client.db('dbPersonas');
 
 
     var map = function () {

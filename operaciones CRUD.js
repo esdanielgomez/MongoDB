@@ -1,8 +1,10 @@
 //--------------------------------------------------------------------------------------
 //INSERCIONES
 
+/*
+
 //Insetar una coleccion 
-db.Persona2.insertOne({ '_id': 1, 'Nombre': 'Daniel'});
+db.Persona.insertOne({ '_id': 1, 'Nombre': 'Daniel'});
 
 //--------------------------------------------------------------------------------------
 //ELIMINACIONES
@@ -49,3 +51,5 @@ db.collection('Persona').updateMany(
         $set: {'Empresa.Status' : 'Jubilado'}
     }
 );
+
+*/

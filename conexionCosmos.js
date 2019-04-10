@@ -6,14 +6,15 @@ const url = "mongodb://cosmosnsoql:f5WX0ctn2UCvQAVToPrBI5BrlHXXmdTm9Ed5lE7tAXJKD
 MongoClient.connect(url, { useNewUrlParser: true }, function(err, client) {
     
     if(err) { 
-        return console.log(" ---> Error al conectar a MongoDB"); 
+        return console.log(" ---> Error al conectar a CosmosDB"); 
     }
     
-    console.log(" ---> Conectado a MongoDB.");
-    var db = client.db('meanstack');
+    console.log(" ---> Conectado a Cosmos DB.");
+    var db = client.db('dbPersonas');
 
-    
+    db.
 
     client.close();
+
 
 });
