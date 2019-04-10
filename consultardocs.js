@@ -1,7 +1,7 @@
 var MongoClient = require('mongodb').MongoClient,
     assert = require('assert');
 
-const url = "mongodb://cosmosnsoql:f5WX0ctn2UCvQAVToPrBI5BrlHXXmdTm9Ed5lE7tAXJKDCfVdGrAla4phmnqDtlbrN5BBJ8JGyckRmCwcDSgig==@cosmosnsoql.documents.azure.com:10255/?ssl=true";
+const url = "URL";
 
 MongoClient.connect(url, { useNewUrlParser: true }, function(err, client) {
     
